@@ -12,7 +12,7 @@ This project provides a simple and efficient way to convert between Windows-styl
 ## Installation
 
 ```
-git install git+https://github.com/r3card0/WSL-path-converter.git@v0.1.0
+pip install git+https://github.com/r3card0/WSL-path-converter.git@v0.1.0
 ```
 
 ## Usage
