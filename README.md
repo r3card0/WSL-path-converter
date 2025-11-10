@@ -11,22 +11,42 @@ This project provides a simple and efficient way to convert between Windows-styl
 
 ## Installation
 
-Clone this repository:
-
 ```
-git clone https://github.com/r3card0/WSL-path-converter.git
+git install git+https://github.com/r3card0/WSL-path-converter.git@v0.1.0
 ```
 
 ## Usage
 
 **Basic Example**
 
+```python
+from wsl_path_converter import PathConverter
 ```
-```
-** Advanced Usage**
+**Convert from Windows to WSL**
 
+```python
+wsl_path = PathConverter("C:\\Users\\archivo.txt").to_wsl()
 ```
+
+Output
+
+```bash
+/mnt/c/Users/archivo.txt
 ```
+
+## Available Methdos
+### `PathConverter(path).to_wsl()`
+
+Convert a Window path to Windows Subsystem Linux path
+
+**Parameters**
+- `filepath` (str): Windows path format (e.g., `C:\\Users\\archivo.txt`)
+
+**Returns**
+- `str` :  Windows Subsystem Linux path (e.g., `/mnt/c/Users/archivo.txt`)
+
+## Versions
+- **v0.1.0** - Initial version
 
 ## Requirements
 * Python 3.10 or higher
