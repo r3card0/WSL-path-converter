@@ -2,7 +2,7 @@ from pathlib import PureWindowsPath, PurePosixPath
 
 class PathConverter:
     def __init__(self, filepath:str):
-        self.filepath = filepath
+        self.filepath = filepath.strip()
 
     # Convert Windows path to WSL path
     def to_wsl(self):
