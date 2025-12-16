@@ -12,5 +12,24 @@ authors = [
     {name = "r3card0", email = "ricardo.rdz@protonmail.com"}
 ]
 
+dependencies = []
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "License :: OSI Approved :: MIT License",
+]
+
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/r3card0/WSL-path-converter"
+Repository = "https://github.com/r3card0/WSL-path-converter"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
 [tool.setuptools.packages.find]
 where = ["src"]
