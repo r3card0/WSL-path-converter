@@ -19,6 +19,7 @@ dist/
 venv/
 env/
 ENV/
+venv_test/
 
 # IDEs
 .vscode/
