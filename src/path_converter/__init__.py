@@ -1,3 +1,3 @@
-from .wsl_path_converter import PathConverter
+from .wsl_path_converter import convert_path
 
-__all__ = ['PathConverter']
+__all__ = ['convert_path']
