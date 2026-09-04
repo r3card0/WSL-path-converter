@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "path-converter"
-version = "0.1.0"
+version = "0.2.0"
 description = "Tool to convert paths between Windows and WSL"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -26,7 +26,7 @@ license = { file = "LICENSE" }
 
 [project.urls]
 Homepage = "https://github.com/r3card0/WSL-path-converter"
-Repository = "https://github.com/r3card0/WSL-path-converter"
+Repository = "https://github.com/r3card0/WSL-path-converter.git"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
