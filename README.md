@@ -1,15 +1,18 @@
-# 🔄️ WSL Path Converter
+# 🔄️ Path Converter
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-A Python utility for converting Windows paths to WSL (Windows Subsystem for Linux) paths and viceversa.
 
 ## 🧭 Overview
-This project provides a simple and efficient way to convert between Windows-style paths (e.g., `C:\\Users\username\file.txt`) and WSL-style paths (e.g., `/mnt/c/Users/username/file.txt`). This is a particularly useful when working with files across both Windows and WSL environments.
+This Python utility automatically detects the current operating system and normalizes file paths accordingly. It is particularly a useful in hybrid environments such as Windows and Linux where both paths are commonly used.
+
 
 ## 🛠️ Features
-* Convert Windows paths to WSL paths.
-* Lightweight and easy to integrate
+* Automatically detects the current operating system
+* Normalizes file paths
+* Converts file paths to the appropriate format for the target platform
+* Useful in hybrid environments such as Windows and Linux
+* Allows users to work with both Windows and Linux paths simultaneously 
 
 ## ⚙️ Installation
 ### 1. Check the Requisites
@@ -36,35 +39,32 @@ In a WSL terminal, run the following process
     source venv_process/bin/activate
     ```
 
-### 3. 📦 Install WSL Path Converter Dependency
+### 3. 📦 Install Path Converter Dependency
 
 Once the virtual environment is installed and activated, install WSL Path Converter dependency by executing the following command:
 
 ```
-pip install git+https://github.com/r3card0/WSL-path-converter.git@v0.1.0
+pip install git+https://github.com/r3card0/WSL-path-converter.git@v0.2.0
 ```
-## ⚡ Class Methods
 
-|Class Method|Objective|Parameter(s)|Result(s)|
-|-|-|-|-|
-|`to_wsl()`|Convert a Window path to Windows Subsystem Linux path| `filepath` (str): Windows path format (e.g., `C:\\Users\\archivo.txt`)| Return a string. `str` :  Windows Subsystem Linux path (e.g., `/mnt/c/Users/archivo.txt`)|
 
 ## Versions
 
 |Version|Description|
 |-|-|
-|**v0.1.0**|Initial version|
+|**v0.1.0**|Initial version Windows and WSL Platforms|
+|**v0.2.0**|Initial version - All Platforms|
 
 ## 🚗 Usage
 
 **Basic Example**
 
 ```python
-from wsl_path_converter import PathConverter
+from path_converter import convert_path 
 
-# Convert from Windows to WSL**
+# path**
 def run():
-    wsl_path = PathConverter("C:\\Users\\archivo.txt").to_wsl()
+    wsl_path = convert_path("C:\\Users\\archivo.txt")
 
     print(wsl_path)
 
